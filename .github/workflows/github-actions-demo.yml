@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [Test, Load-Test]
     environment:
-      name: Production
+      name: PRD
       url: https://writeabout.net
     if: github.event.inputs.environment == 'Production'
     steps:
